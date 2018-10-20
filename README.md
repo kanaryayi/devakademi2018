@@ -15,7 +15,7 @@ Code is built to predict the approximate click number of a new advertisement.
 4. Make a ceil and floor subarrays from the most similar titles with their ids.
 5. Calculate average click numbers of both id arrays.
 
-**Parameters**
+**Keyboard Parameters**
 
 -New Title-(String)  : The title which will be given on new advertisement.
 
@@ -23,4 +23,12 @@ Code is built to predict the approximate click number of a new advertisement.
 
 **Run The Code**
 
-It's a ordinary java console application with 2 mandatory parameters.
+It's a ordinary java console application with 2 keyboard mandatory parameters.
+
+**Used Algorithms and Data Structures**
+
+[Levenshstein Distance Algorithm] (http://www.wikizeroo.com/index.php?q=aHR0cHM6Ly9lbi53aWtpcGVkaWEub3JnL3dpa2kvTGV2ZW5zaHRlaW5fZGlzdGFuY2U)
+TreeMap
+
+**Complexity**
+
