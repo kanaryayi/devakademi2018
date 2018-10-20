@@ -15,14 +15,14 @@ public class Main {
 
 	public static void main(String[] args) {
 		Main main = new Main();
-		main.getSystemIn();
-
-		JsonReader jr = new JsonReader();
-
-		String urlAllAds = "https://devakademi.sahibinden.com/api/ads/findAll";
-		main.getAds(jr, main.newTitle, urlAllAds);
 		TreeMap<Long, ArrayList<Long>> simMap = main.disMap;
 		TreeMap<Long, Long> clickNumbers = main.clickNumbers;
+		
+		main.getSystemIn();
+		JsonReader jr = new JsonReader();
+		String urlAllAds = "https://devakademi.sahibinden.com/api/ads/findAll";
+		main.getAds(jr, main.newTitle, urlAllAds);
+		
 		String urlAllClickStats = "https://devakademi.sahibinden.com/api/stats/findAllByEventType?eventType=CLICK";
 		main.getAllClickNumberofAllAdds(jr, urlAllClickStats);
 
@@ -119,13 +119,16 @@ public class Main {
 	private void estimateClickNumber(int kMostSimilar) {
 		ArrayList<Long> mostSimilarIds = new ArrayList<>();
 		double halfd = kMostSimilar / 2.0;
-		long half1 = (long) Math.ceil(halfd);
-		long half2 = kMostSimilar - half1;
-		long click1 = 0;
-		long click2 = 0;
+		long half1len = (long) Math.ceil(halfd);
+		long half2len = kMostSimilar - half1len;
+		long clickof1 = 0;
+		long clickof2 = 0;
 		int filled = 0;
 		int i = 0;
-
+		/*
+		 * Until "knn" is reached, add first half to the "clickof1" and do the same thing
+		 * for second half. 
+		 */
 		for (long dis : disMap.keySet()) {
 			ArrayList<Long> idArr = disMap.get(dis);
 
@@ -135,11 +138,11 @@ public class Main {
 					mostSimilarIds.add(id);
 
 					filled++;
-					if (i < half1) {
-						click1 += clickNumbers.get(id);
+					if (i < half1len) {
+						clickof1 += clickNumbers.get(id);
 					} else {
 
-						click2 += clickNumbers.get(id);
+						clickof2 += clickNumbers.get(id);
 					}
 
 				}
@@ -148,11 +151,11 @@ public class Main {
 
 		}
 		System.out.println("Estimated Click Number :");
-		if (half2 == 0) {
-			System.out.println(click1);
+		if (half2len == 0) {
+			System.out.println(clickof1);
 		} else {
-			long appr1 = Math.round(click1 / half1);
-			long appr2 = Math.round(click2 / half2);
+			long appr1 = Math.round(clickof1 / half1len);
+			long appr2 = Math.round(clickof2 / half2len);
 			if (appr1 < appr2) {
 				System.out.println(appr1 + " - " + appr2);
 			} else {
@@ -160,7 +163,7 @@ public class Main {
 			}
 
 		}
-		System.out.println(mostSimilarIds.toString());
+		//System.out.println(mostSimilarIds.toString());
 
 	}
 
