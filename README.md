@@ -3,9 +3,11 @@
 This repo built by the reason of competition of [Sahibinden.com](Sahibinden.com)
 
 **Purpose**
+
 With given advertisements, users and stats data, create a project strictly in 7 hours.
 
 **Code Does**
+
 Code is built to predict the approximate click number of a new advertisement.
 1. Evaluate similarity value of "new title" with given "title"s which are obtained from given advertisements. 
 2. Store click number of each given advertisements by API,
