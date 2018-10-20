@@ -27,10 +27,11 @@ It's a ordinary java console application with 2 keyboard mandatory parameters.
 
 Run Main.java without any console parameters.
 
-**Used Algorithms and Data Structures**
+**Used Algorithms**
 
 [Levenshstein Distance Algorithm](http://www.wikizeroo.com/index.php?q=aHR0cHM6Ly9lbi53aWtpcGVkaWEub3JnL3dpa2kvTGV2ZW5zaHRlaW5fZGlzdGFuY2U)
-TreeMap
+
+To get similarity value between to certain strings.
 
 **Complexity**
   
