@@ -14,3 +14,12 @@ Code is built to predict the approximate click number of a new advertisement.
 3. Consider the most similar "K" titles and its advertiments.
 4. Make a ceil and floor subarrays from the most similar titles with their ids.
 5. Calculate average click numbers of both id arrays.
+
+**Parameters**
+
+-New Title-(String)  : The title which will be given on new advertisement.
+-KNN value-(Integer) : The value that affects how many "the most similar titles" and "their click numbers" will be considered.
+
+**Run The Code**
+
+It's a ordinary java console application with 2 mandatory parameters.
