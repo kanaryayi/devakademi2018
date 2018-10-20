@@ -28,7 +28,7 @@ Run Main.java without any console parameters.
 
 **Used Algorithms and Data Structures**
 
-[Levenshstein Distance Algorithm] (http://www.wikizeroo.com/index.php?q=aHR0cHM6Ly9lbi53aWtpcGVkaWEub3JnL3dpa2kvTGV2ZW5zaHRlaW5fZGlzdGFuY2U)
+[Levenshstein Distance Algorithm](http://www.wikizeroo.com/index.php?q=aHR0cHM6Ly9lbi53aWtpcGVkaWEub3JnL3dpa2kvTGV2ZW5zaHRlaW5fZGlzdGFuY2U)
 TreeMap
 
 **Complexity**
