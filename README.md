@@ -1,6 +1,6 @@
 # devakademi2018
 *Sahibinden.com Software Challenge*
-This repo built by the reason of competition of Sahibinden.com
+This repo built by the reason of competition of [Sahibinden.com](Sahibinden.com)
 
 **Purpose**
 With given advertisements, users and stats data, create a project strictly in 7 hours.
