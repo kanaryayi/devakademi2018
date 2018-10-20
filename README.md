@@ -24,6 +24,7 @@ Code is built to predict the approximate click number of a new advertisement.
 **Run The Code**
 
 It's a ordinary java console application with 2 keyboard mandatory parameters.
+
 Run Main.java without any console parameters.
 
 **Used Algorithms and Data Structures**
@@ -36,5 +37,8 @@ TreeMap
   ~(t^2)+2n+c
 
 t -> General title size
+
 n -> Total Number of Advertisements
+
 c -> Total Number of Clicked Advertisements
+
