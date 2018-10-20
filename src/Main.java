@@ -18,7 +18,7 @@ public class Main {
 
 		JsonReader jr = new JsonReader();
 		Main main = new Main();
-		String urlAllAds = "file:///home/htc/eclipse-workspace/Sahibinden/apiOut";
+		String urlAllAds = "https://devakademi.sahibinden.com/api/ads/findAll";
 		main.getAds(jr, newTitle, urlAllAds);
 		TreeMap<Long, ArrayList<Long>> simMap = main.disMap;
 		TreeMap<Long, Long> clickNumbers = main.clickNumbers;
