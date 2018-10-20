@@ -8,7 +8,7 @@ With given advertisements, users and stats data, create a project strictly in 7 
 
 **Code Does**
 
-Code is built to predict the approximate click number of a new advertisement.
+Code is built to predict the approximate click number of a new advertisement. By doing this, advertiser could plan or foresee his/her advertisement success.
 1. Evaluate similarity value of "new title" with given "title"s which are obtained from given advertisements. 
 2. Store click number of each given advertisements by API,
 3. Consider the most similar "K" titles and its advertiments.
