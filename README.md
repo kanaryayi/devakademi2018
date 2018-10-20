@@ -31,7 +31,9 @@ Run Main.java without any console parameters.
 
 [Levenshstein Distance Algorithm](http://www.wikizeroo.com/index.php?q=aHR0cHM6Ly9lbi53aWtpcGVkaWEub3JnL3dpa2kvTGV2ZW5zaHRlaW5fZGlzdGFuY2U)
 
-To get similarity value between to certain strings.
+To get similarity value between two certain strings.
+
+After a brief research [Jaccard Similarity Algorithm](http://www.wikizeroo.com/index.php?q=aHR0cHM6Ly9lbi53aWtpcGVkaWEub3JnL3dpa2kvSmFjY2FyZF9pbmRleA) would be better but couldn't be implemented,unfortunately.
 
 **Complexity**
   
